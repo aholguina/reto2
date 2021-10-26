@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "reto3",
+			"path": "..\\..\\..\\pruebaspring\\reto3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "reto2"
+	}
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title> Reto 2</title>
+         <style>
+             table, th, td{
+                 border: 1px solid black;
+                 border-collapse: collapse;
+             }
+         </style>
+         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+         <script src="funcionesG25prof.js"> </script>
+    </head>
+    <body>
+        <h2> Desarrollo del Reto 2 Andres Holguin</h2>
+
+        <button onclick="consultar()"> Consultar Disfraces </button>
+        <button onclick="Ingresar()"> Insertar Disfraces </button>
+        <button onclick="borrar()"> Borrar Disfraces </button>
+        <button onclick="actualizar()"> Actualizar planetas </button>
+        <button onclick="consultarItems()"> consultar por id los disfraces </button>
+        <button onclick="actualizarItem()"> Editar </button>
+
+        <input type="number" id="idCodigo"  placeholder="codigo Disfraz"> </input>
+        <input type="text"   id="idBrand"   placeholder="Marca Fabrica"> </input>
+        <input type="number" id="idModel"   placeholder="Modelo"> </input>
+        <input type="number" id="idCategory"placeholder="Categoria"> </input>
+        <input type="text"   id="idName"    placeholder="Nombre"> </input>
+        <div id="idDivConsulta">
+            <tabla>
+                <tbody id="idDivConsulta"></tbody>
+                   
+        </div>
+    </body>
+
+</html>

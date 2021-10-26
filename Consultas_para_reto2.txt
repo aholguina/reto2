@@ -1,0 +1,99 @@
+Sentencias SQL
+para manejador costume
+para GET
+SELECT * FROM disfraz 
+
+GET:ID
+SELECT * FROM disfraz WHERE id = :id
+
+Para PUT
+
+BEGIN
+UPDATE DISFRAZ
+SET brand=:brand, model=:model, category_id = :category_id, name = :name
+WHERE id=:id;
+:status_code:=201;
+END;
+Para POST
+
+BEGIN 
+INSERT INTO disfraz (id,brand,model,category_id,name) VALUES (:id,:brand, :model, :category_id, :name);
+:status_code:=201;
+END;
+
+Para DELETE
+
+BEGIN
+DELETE FROM disfraz WHERE id=:id;
+:status_code:=204;
+END;
+
+
+para manejador MESSAGE
+
+para GET
+SELECT * FROM message
+
+para GET:ID
+SELECT * from message where id=:id
+
+
+para PUT
+
+BEGIN
+UPDATE MESSAGE
+SET messagetext =: messagetext
+WHERE id=:id;
+:status_code:=201;
+END;
+
+para POST
+
+BEGIN
+INSERT INTO MESSAGE (id, messagetext) values (:id, :messagetext);
+:status_code:=201;
+END;
+
+
+para DELETE
+
+BEGIN
+DELETE FROM MESSAGE  WHERE id=:id;
+:status_code:=204;
+END;
+
+
+para manejador CLIENT
+
+para GET
+SELECT * FROM CLIENT 
+
+para GET:ID
+
+SELECT * FROM CLIENT WHERE id=:id
+
+para PUT
+
+BEGIN
+UPDATE CLIENT
+SET name=:name, email=:email, age=:age
+WHERE id=:id;
+:status_code:=201;
+END;
+
+para POST
+BEGIN
+INSERT INTO client (id, name, email,age) values(:id, :name, :email, :age);
+:status_code:=201;
+END;
+
+
+Para DELETE
+
+BEGIN
+DELETE FROM CLIENT WHERE id=:id;
+:status_code:=204;
+END;
+
+
+https://g7f24b339c6f755-dbretouno.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message
